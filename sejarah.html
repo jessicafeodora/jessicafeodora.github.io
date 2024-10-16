@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sejarah Komputer</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+	<!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="home">Home</a></li>
+                <li><a href="sejarah.html" class="sejarah">Sejarah Umum</a></li>
+                <li><a href="jenis.html" class="jenis">Jenis-Jenis Komputer</a></li>
+                <li><a href="perkembangan.html" class="perkembangan">Perkembangan Komputer</a></li>
+                <li><a href="spesifikasi.html" class="spesifikasi">Spesifikasi Komputer</a></li>
+                <li><a href="pengaruh.html" class="pengaruh">Pengaruh Komputer dalam Kehidupan Sehari-hari</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<!-- SEJARAH SECTION -->
+	<section class="sejarah-section">
+		<p class="title">Sejarah Umum</p>
+		<img src="assets\com.jpg">
+		<p>Komputer adalah alat yang dipakai untuk mengolah data menurut perintah yang telah diprogram. Kata
+			komputer semula
+			dipergunakan untuk menggambarkan orang yang perkerjaannya melakukan perhitungan aritmetika, dengan atau
+			tanpa
+			alat bantu, tetapi arti kata ini kemudian dipindahkan kepada mesin itu sendiri. Pada awalnya, pengolahan
+			informasi hampir eksklusif berhubungan dengan masalah aritmatika, tetapi komputer modern dipakai untuk
+			banyak
+			tugas yang tidak berhubungan dengan matematika.</p>
+	</section>
+
+
+	<!-- SEJARAH SECTION -->
+	<section class="penemu-section">
+		<p class="title">Penemu Komputer</p>
+		<img src="assets\babbage.jpeg">
+		<p>Tokoh penting yang dikenal sebagai penemu komputer pertama adalah Charles Babbage pada tahun 1822 yang
+			berasal dari Inggris. Babbage merupakan seorang ahli matematika.
+
+			Mulanya Babbage bermaksud untuk menciptakan sebuah mesin hitung bertenaga uap yang dapat menghitung tabel
+			angka. Setelah itu, mesin kemudian diberi nama "Difference Engine 0".
+
+			Prinsip kerja yang dimiliki mesin tersebut sama seperti komputer modern, yakni mampu melakukan penghitungan
+			angka atau komputasi. Mesin inilah yang kemudian menjadi cikal bakal terciptanya komputer.
+			.</p>
+	</section>
+
+	<!-- FOOTER SECTION -->
+	<footer class="footer">
+		<p>Created and designed by <a href="credit.html" class="footer-link">Kelompok 2 Pemrograman Web 3KB02</a>
+		</p>
+	</footer>
+</body>
+
+<style>
+	body {
+		font-family: 'Poppins', sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #257180;
+		color: #f7f0f6
+	}
+
+	header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #257180;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 30px;
+        border-bottom: 1px ridge #CB6040;
+        border-top: 1px ridge #CB6040;
+        font-family: 'Montserrat';
+        transition: 3s;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    header nav ul li {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 5px;
+        text-align: center;
+        position: relative;
+        height: 60px;
+        margin: 0 2px;
+        max-width: 270px;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16pt;
+    }
+
+    header nav ul li a:hover {
+        border-radius: 70px;
+        box-shadow: 0 0 11px #CB6040;
+        color: #FD8B51;
+        padding: 10px;
+    }
+
+	.sejarah-section, .penemu-section {
+		display: flex;
+		flex-direction: column;
+		margin-left: 130px;
+		font-family: 'Montserrat';
+		margin-top: 90px;
+		font-size: 14pt;
+		text-align: justify;
+		max-width: 87%;
+	}
+
+	.title {
+		font-size: 30pt;
+		font-weight: bold;
+		color: #f7f0f6;
+		line-height: 1.5;
+		margin-bottom: 10px;
+	}
+
+	img {
+		width: 400px;
+		height: 400px;
+		border-radius: 10px;
+		align-content: center;
+		margin: 0 auto;
+	}
+
+	.footer {
+        font-size: 14pt;
+        width: 100%;
+        background-color: #257180;
+        color: white;
+        font-family: 'Montserrat';
+        text-align: right;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        z-index: 1000;
+        position: relative;
+        right: 70px;
+    }
+
+    .footer-link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        color: #FD8B51;
+        text-decoration: none;
+    }
+</style>
+
+</html>
+

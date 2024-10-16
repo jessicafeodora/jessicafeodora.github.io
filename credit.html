@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 2 Pemrograman Web 3KB02</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="home">Home</a></li>
+                <li><a href="sejarah.html" class="sejarah">Sejarah Umum</a></li>
+                <li><a href="jenis.html" class="jenis">Jenis-Jenis Komputer</a></li>
+                <li><a href="perkembangan.html" class="perkembangan">Perkembangan Komputer</a></li>
+                <li><a href="spesifikasi.html" class="spesifikasi">Spesifikasi Komputer</a></li>
+                <li><a href="pengaruh.html" class="pengaruh">Pengaruh Komputer dalam Kehidupan Sehari-hari</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INTRO SECTION -->
+    <section class="intro-section">
+        <section class="welcome-text">
+            <p id="welcome-text1">Kelompok 2 Pemrograman Web 3KB02</p>
+            <p id="welcome-text2"></p>
+        </section>
+    </section>
+
+    <!-- CREDIT SECTION -->
+    <div class="container">
+        <div class="credit">
+            <img src="assets\dapa.jpg"/>
+            <p>
+                Dafa Raihan Ranindra Putra <br> 20122304 <brr>
+            </p>
+        </div>
+        <div class="credit">
+            <img src="assets\hapis.jpg" />
+            <p>
+                Hafiz Nurhan Putra <br> 20122568 <brr>
+            </p>
+        </div>
+        <div class="credit">
+            <img src="assets\jess.jpg" />
+            <p>
+                Jessica Feodora Baeha <br> 20122659 <brr>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="credit">
+            <img src="assets\punta.jpg" />
+            <p>
+                Muhammad Puntadewa <br> 20122959 <brr>
+            </p>
+        </div>
+        <div class="credit">
+            <img src="assets\okta.jpg" />
+            <p>
+                Oktavira Natasya <br> 21122103 <brr>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #257180;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #257180;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 30px;
+        border-bottom: 1px ridge #CB6040;
+        border-top: 1px ridge #CB6040;
+        font-family: 'Montserrat';
+        transition: 3s;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    header nav ul li {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 5px;
+        text-align: center;
+        position: relative;
+        height: 60px;
+        margin: 0 2px;
+        max-width: 270px;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16pt;
+    }
+
+    header nav ul li a:hover {
+        border-radius: 70px;
+        box-shadow: 0 0 11px #CB6040;
+        color: #FD8B51;
+        padding: 10px;
+    }
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+        font-family: 'Montserrat';
+        margin-top: 90px;
+    }
+
+    #welcome-text1 {
+        font-size: 30pt;
+        font-weight: bold;
+        color: #f7f0f6;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    #welcome-text2 {
+        font-size: 20pt;
+        font-weight: bold;
+        color: #f7f0f6;
+        justify-content: justify;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .credit {
+        width: 200px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .credit img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .credit p {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #f7f0f6;
+    }
+</style>
+
+
+</html>
