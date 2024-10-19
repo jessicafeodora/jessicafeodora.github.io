@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputer Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="sejarah.html" class="sejarah">Sejarah Umum</a></li>
+                <li><a href="jenis.html" class="jenis">Jenis-Jenis Komputer</a></li>
+                <li><a href="perkembangan.html" class="perkembangan">Perkembangan Komputer</a></li>
+                <li><a href="spesifikasi.html" class="spesifikasi">Spesifikasi Komputer</a></li>
+                <li><a href="pengaruh.html" class="pengaruh">Pengaruh Komputer dalam Kehidupan Sehari-hari</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INTRO SECTION -->
+    <section class="intro-section">
+        <section class="welcome-text">
+            <p id="welcome-text1">Selamat datang!</p>
+            <p id="welcome-text2">Mari belajar lebih dalam mengenai komputer di sini.</p>
+        </section>
+    </section>
+
+
+    <!-- HOME SECTION -->
+    <main class="home-section">
+
+        <!-- HISTORY SECTION -->
+        <section class="history-section">
+            <section class="left">
+                <p class="title">Sejarah Umum</p>
+                <p class="about">Komputer adalah alat yang dipakai untuk mengolah data menurut perintah yang telah
+                    diprogram. Kata komputer semula dipergunakan untuk menggambarkan orang yang perkerjaannya melakukan
+                    ...</p>
+                <a href="sejarah.html" class="btn">Baca lebih lanjut</a>
+            </section>
+
+            <section class="right">
+                <img src="assets\com.jpg">
+            </section>
+        </section>
+
+        <!-- TYPE SECTION -->
+        <section class="type-section">
+            <section class="left">
+                <p class="title">Jenis-Jenis Komputer</p>
+                <p class="about">Komputer memiliki beragam fungsi, di antaranya pemrosesan data, komunikasi, penyimpanan
+                    data, ...</p>
+                <a href="jenis.html" class="btn">Baca lebih lanjut</a>
+            </section>
+
+            <section class="right">
+                <img src="assets/Lap.webp">
+            </section>
+        </section>
+
+        <!-- DEVELOPMENT SECTION -->
+        <section class="dev-section">
+            <section class="left">
+                <p class="title">Perkembangan Komputer</p>
+                <p class="about">Sejarah perkembangan komputer dari awal hingga sekarang setidaknya telah melalui lima
+                    generasi yang membuat
+                    teknologi komputer semakin maju. Pesatnya teknologi informasi dan komunikasi (TIK) saat ...
+                </p>
+                <a href="perkembangan.html" class="btn">Baca lebih lanjut</a>
+            </section>
+
+            <section class="right">
+                <img src="assets\KomGen2.jpg">
+            </section>
+        </section>
+
+        <!-- SPECIFICATION SECTION -->
+        <section class="spec-section">
+            <section class="left">
+                <p class="title">Spesifikasi Komputer</p>
+                <p class="about">Spesifikasi komputer adalah rincian teknis dari semua komponen yang menyusun sebuah
+                    komputer. Informasi
+                    ini sangat penting untuk mengetahui seberapa cepat, ...
+                </p>
+                <a href="spesifikasi.html" class="btn">Baca lebih lanjut</a>
+            </section>
+
+            <section class="right">
+                <img src="assets\SpecPc.jpg">
+            </section>
+        </section>
+
+        <!-- IMPACT SECTION -->
+        <section class="impact-section">
+            <section class="left">
+                <p class="title">Pengaruh Komputer dalam Kehidupan Sehari-hari</p>
+                <p class="about">Komputer memiliki pengaruh yang sangat besar dalam kehidupan sehari-hari, mempengaruhi
+                    berbagai aspek kehidupan, mulai dari ...
+                </p>
+                <a href="pengaruh.html" class="btn">Baca lebih lanjut</a>
+            </section>
+
+            <section class="right">
+                <img src="assets\impact.jpg">
+            </section>
+        </section>
+
+        <!-- FORM SECTION -->
+        <section class="message-section" id="message-section">
+            <p class="title">Message Us</p>
+            <section class="message-container">
+
+                <!-- MESSAGE INPUT SECTION -->
+                <article class="left">
+                    <form name="message-form" onsubmit="return validateForm()">
+                        <section class="form-row">
+                            <label class="label" name="fullname">Nama Lengkap</label>
+                            <label class="colon" for="colon">: </label>
+                            <input id="name-input" class="textbox" type="text" name="name-input">
+                        </section>
+                        <section class="form-row">
+                            <label class="label" name="npm">NPM</label>
+                            <label class="colon" for="colon">: </label>
+                            <input id="npm-input" class="textbox" type="text" name="npm-input">
+                        </section>
+                        <section class="form-row">
+                            <label class="label" name="born">Tanggal Lahir</label>
+                            <label class="colon" for="colon">: </label>
+                            <input id="birth-input" class="textbox" type="date" name="birth-input">
+                        </section>
+                        <section class="form-row">
+                            <label class="label" name="fullname">Kota Tinggal</label>
+                            <label class="colon" for="colon">: </label>
+                            <input id="kotatinggal-input" class="textbox" type="text" name="kotatinggal-input">
+                        </section>
+                        <section class="form-row">
+                            <label class="label">Jenis Kelamin</label>
+                            <label class="colon" for="colon">: </label>
+                            <section class="radio-group">
+                                <label><input type="radio" name="gender" value="Male">Pria</label>
+                                <label><input type="radio" name="gender" value="Female">Wanita</label>
+                            </section>
+
+                        </section>
+                        <section class="form-row">
+                            <label class="label" for="message">Komentar & Saran</label>
+                            <label class="colon" for="colon">: </label>
+                            <textarea id="message-input" class="textbox" rows="5"
+                                placeholder="You can give your feedback here." name="message-input"></textarea>
+                        </section>
+                        <button id="submit-button" class="submit" type="submit">Kirim</button>
+                    </form>
+                </article>
+
+                <!-- MESSAGE OUTPUT SECTION -->
+                <article class="right">
+                    <textarea id="form-output" class="output-textbox" name="message-output"
+                        placeholder="Your message will be displayed here."></textarea>
+                </article>
+            </section>
+        </section>
+
+
+        <!-- FOOTER SECTION -->
+        <footer class="footer">
+            <p>Created and designed by <a href="credit.html" class="footer-link">Kelompok 2 Pemrograman Web 3KB02</a>
+            </p>
+        </footer>
+
+        <script src="js\script.js"></script>
+</body>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #257180;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #257180;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 30px;
+        border-bottom: 1px ridge #CB6040;
+        border-top: 1px ridge #CB6040;
+        font-family: 'Montserrat';
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    header nav ul li {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 5px;
+        text-align: center;
+        position: relative;
+        height: 60px;
+        margin: 0 2px;
+        max-width: 270px;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16pt;
+    }
+
+    header nav ul li a:hover {
+        border-radius: 70px;
+        box-shadow: 0 0 11px #CB6040;
+        color: #FD8B51;
+        padding: 10px;
+    }
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+        font-family: 'Montserrat';
+        margin-top: 90px;
+    }
+
+    #welcome-text1 {
+        font-size: 30pt;
+        font-weight: bold;
+        color: #f7f0f6;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    #welcome-text2 {
+        font-size: 20pt;
+        font-weight: bold;
+        color: #f7f0f6;
+        justify-content: justify;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding-right: 15%;
+        padding-left: 5%;
+        justify-content: flex-start;
+    }
+
+    .history-section,
+    .type-section,
+    .dev-section,
+    .spec-section,
+    .impact-section,
+    .message-section {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 40px;
+        align-items: flex-start;
+    }
+
+    .left {
+        flex-basis: 50%;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        margin-right: 350px;
+    }
+
+    .title {
+        font-size: 24pt;
+        color: #FD8B51;
+        font-weight: bold;
+    }
+
+
+    .about {
+        font-size: 16pt;
+        color: #f7f0f6;
+        justify-content: justify;
+        line-height: 1.5;
+    }
+
+    .right {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .right img {
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    .right textarea {
+        width: 500px;
+        height: 300px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #FD8B51;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .message-section {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-top: 60px;
+        font-size: 16pt;
+    }
+
+    .message-container {
+        flex-direction: row;
+        display: flex;
+        font-family: 'Poppins';
+    }
+
+    .message-container>article {
+        display: flex;
+        flex: 1;
+        align-content: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .message-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        justify-content: space-around;
+        margin-right: 0px;
+        color: #f7f0f6;
+    }
+
+    .form-row {
+        display: flex;
+        align-items: center;
+    }
+
+    .label {
+        flex: 1, 5;
+        min-width: 200px;
+    }
+
+    .colon {
+        min-width: 15px;
+    }
+
+    .textbox {
+        flex: 1;
+        padding: 5px;
+        width: 300px;
+    }
+
+    .radio-group {
+        display: flex;
+        gap: 10px;
+    }
+
+    .submit {
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    /*MESSAGE INPUT ARTICLE*/
+    .message-output {
+        margin-left: 10px;
+    }
+
+    .output-textbox {
+        width: auto;
+        height: auto;
+
+    }
+
+    .footer {
+        font-size: 14pt;
+        width: 100%;
+        background-color: #257180;
+        color: white;
+        font-family: 'Montserrat';
+        text-align: right;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        z-index: 1000;
+        position: relative;
+        right: -200px;
+    }
+
+    .footer-link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        color: #FD8B51;
+        text-decoration: none;
+    }
+</style>
+
+</html>
